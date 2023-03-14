@@ -11,6 +11,11 @@
         "type": "text",
         "key": "text",
         "label": "Text"
+      },
+      {
+        "type": "text",
+        "key": "calendarTheme",
+        "label": "Thme"
       }
     ]
   }
