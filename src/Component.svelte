@@ -13,7 +13,7 @@
   
   export let mappingTitle
   export let mappingDate
-  export let color
+ 
   export let mappingTitle2
   export let mappingDate2
 
@@ -24,9 +24,8 @@
   export let mappingColor2
   
   let eventsList = []
-
   onMount(()=>{
-    console.log(color, 'color')
+    
     if(eventsList.length > 0){
       eventsList = []
     }

@@ -13,6 +13,7 @@
         "key": "dataProvider",
         "required": true
       },
+      
       {
         "type": "text",
         "key": "mappingTitle",
@@ -24,9 +25,10 @@
         "label": "Date Mapping (Event Group 1)"
       },
       {
-        "type": "text",
+        "type": "color",
+        "label": "Color Mapping",
         "key": "mappingColor",
-        "label": "Color Mapping (Event Group 1) (HEX)"
+        "defaultValue": "#272727"
       },
       {
         "type": "dataProvider",
@@ -47,9 +49,10 @@
         "label": "Date Mapping (Event Group 2)"
       },
       {
-        "type": "text",
+        "type": "color",
+        "label": "Color Mapping",
         "key": "mappingColor2",
-        "label": "Color Mapping (Event Group 2) (HEX)"
+        "defaultValue": "#000"
       },
       {
         "type": "select",
