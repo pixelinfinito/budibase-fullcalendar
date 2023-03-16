@@ -29,3 +29,22 @@
                             </template>
                         </FullCalendar>
 }) */
+
+
+
+/* {
+    "type": "text",
+    "key": "mappingTitle2",
+    "label": "Title Mapping (Event Group 2)"
+  },
+  
+  {
+    "type": "text",
+    "key": "mappingDate2",
+    "label": "Date Mapping (Event Group 2)"
+  },
+  {
+    "type": "text",
+    "key": "mappingColor2",
+    "label": "Color Mapping (Event Group 2)"
+  }, */

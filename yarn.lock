@@ -163,6 +163,13 @@
   dependencies:
     tslib "^2.1.0"
 
+"@fullcalendar/core@^6.1.4":
+  version "6.1.4"
+  resolved "https://registry.yarnpkg.com/@fullcalendar/core/-/core-6.1.4.tgz#bfc67bf4ad0c8d99a7e1258b24b5b241c6f48ed1"
+  integrity sha512-ZDD0Owv0LezAk14nsRNaOc9nbowItGmT0mnjOhEw+L6B8P5eads8yYaNA9itn70MWoOjiAG8xqD7Yk1iJGxqgQ==
+  dependencies:
+    preact "^10.0.5"
+
 "@fullcalendar/daygrid@^6.1.4":
   version "6.1.4"
   resolved "https://registry.yarnpkg.com/@fullcalendar/daygrid/-/daygrid-6.1.4.tgz#fe1335eaa7a4e60ee4b0e6b3896b32398fac6c2c"
@@ -3249,6 +3256,11 @@ pouchdb@7.3.0:
     through2 "3.0.2"
     uuid "8.3.2"
     vuvuzela "1.0.3"
+
+preact@^10.0.5:
+  version "10.13.1"
+  resolved "https://registry.yarnpkg.com/preact/-/preact-10.13.1.tgz#d220bd8771b8fa197680d4917f3cefc5eed88720"
+  integrity sha512-KyoXVDU5OqTpG9LXlB3+y639JAGzl8JSBXLn1J9HTSB3gbKcuInga7bZnXLlxmK94ntTs1EFeZp0lrja2AuBYQ==
 
 process-nextick-args@~2.0.0:
   version "2.0.1"

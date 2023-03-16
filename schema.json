@@ -2,10 +2,10 @@
   "type": "component",
   "metadata": {},
   "schema": {
-    "name": "mycalendar",
-    "friendlyName": "mycalendar",
+    "name": "budibase-fullcalendar",
+    "friendlyName": "FullCalendar",
     "description": "simple calendar component for budibase",
-    "icon": "Text",
+    "icon": "Calendar",
     "settings": [
       {
         "type": "dataProvider",
@@ -26,13 +26,13 @@
       {
         "type": "text",
         "key": "mappingColor",
-        "label": "Color Mapping (Event Group 1)"
+        "label": "Color Mapping (Event Group 1) (HEX)"
       },
       {
         "type": "dataProvider",
         "label": "DataProvider (Event Group 2)",
         "key": "dataProvider2",
-        "required": true
+        "required": false
       },
 
       {
@@ -40,6 +40,7 @@
         "key": "mappingTitle2",
         "label": "Title Mapping (Event Group 2)"
       },
+      
       {
         "type": "text",
         "key": "mappingDate2",
@@ -48,18 +49,18 @@
       {
         "type": "text",
         "key": "mappingColor2",
-        "label": "Color Mapping (Event Group 2)"
+        "label": "Color Mapping (Event Group 2) (HEX)"
       },
       {
         "type": "select",
         "key": "language",
-        "options": ["pt", "en", "fr", "es", "pt-br", "ru", "ja", "uk"] ,
+        "options": ["pt", "en", "fr", "es", "ru"] ,
         "label": "language",
         "defaultValue": "pt"
       },
       {
         "type": "event",
-        "label": "On Change",
+        "label": "On Click",
         "key": "calendarEvent",
         "context": [
           {

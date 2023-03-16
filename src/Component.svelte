@@ -1,22 +1,19 @@
 <script>
   
   import { getContext } from "svelte"	
-  import 'dayjs/locale/pt.js'
-  import 'bootstrap/dist/css/bootstrap.css';
-  import 'bootstrap-icons/font/bootstrap-icons.css';
-  import bootstrap5Plugin from '@fullcalendar/bootstrap5'
+  import '@fullcalendar/core/locales-all'
   import FullCalendar from 'svelte-fullcalendar';
   import daygridPlugin from '@fullcalendar/daygrid';
   import listPlugin from '@fullcalendar/list';
   import { onMount } from "svelte";
- 
+  import {langs, codeLang} from "./lang"
  
   export let language
   export let calendarEvent
   
   export let mappingTitle
   export let mappingDate
-
+  export let color
   export let mappingTitle2
   export let mappingDate2
 
@@ -28,18 +25,15 @@
   
   let eventsList = []
 
-  $:{
-    
-  }
   onMount(()=>{
-    console.log(language, 'lang')
+    console.log(color, 'color')
     if(eventsList.length > 0){
       eventsList = []
     }
     if(dataProvider.rows){
       dataProvider.rows.forEach(event => {
         let eventColor = mappingColor ?? '#313131'           
-        eventsList.push({ title: event[mappingTitle], date: event[mappingDate], color: eventColor, event: event   })        
+        eventsList.push({ title: event[mappingTitle], date: event[mappingDate], color: eventColor, event: event, allDay: true   })        
       });
     }
     if(dataProvider2.rows){
@@ -58,10 +52,9 @@
       center: 'title',
       right: 'dayGridMonth'
     },
-    plugins: [daygridPlugin, listPlugin, bootstrap5Plugin],
-    themeSystem: 'bootstrap5',
+    plugins: [daygridPlugin, listPlugin],
     initialDate:  Date.now(),
-    locale: 'pt',
+    locale: language,
     dayMaxEvents: true,
     eventClick: (event)=>{
       calendarEvent({
@@ -71,7 +64,9 @@
       console.log(event.event.title)
     },
     events:eventsList,
-    eventColor: '#378006'
+    eventColor: '#378006',
+    theme: true,
+    ...langs[codeLang(language)]
   }
   const { styleable } = getContext("sdk") 
   const component = getContext("component")
