@@ -11,8 +11,14 @@
   },
   "dependencies": {
     "@crownframework/svelte-error-boundary": "^1.0.3",
+    "@fullcalendar/bootstrap5": "^6.1.4",
+    "@fullcalendar/daygrid": "^6.1.4",
+    "@fullcalendar/list": "^6.1.4",
+    "bootstrap": "^5.2.3",
+    "bootstrap-icons": "^1.10.3",
     "dayjs": "^1.11.7",
-    "svelte": "^3.49.0"
+    "svelte": "^3.49.0",
+    "svelte-fullcalendar": "^2.0.0-beta.0"
   },
   "devDependencies": {
     "@budibase/backend-core": "^2.0.13",

@@ -8,15 +8,67 @@
     "icon": "Text",
     "settings": [
       {
-        "type": "text",
-        "key": "text",
-        "label": "Text"
+        "type": "dataProvider",
+        "label": "DataProvider (Event Group 1)",
+        "key": "dataProvider",
+        "required": true
       },
       {
         "type": "text",
-        "key": "calendarTheme",
-        "label": "Thme"
+        "key": "mappingTitle",
+        "label": "Title Mapping (Event Group 1)"
+      },
+      {
+        "type": "text",
+        "key": "mappingDate",
+        "label": "Date Mapping (Event Group 1)"
+      },
+      {
+        "type": "text",
+        "key": "mappingColor",
+        "label": "Color Mapping (Event Group 1)"
+      },
+      {
+        "type": "dataProvider",
+        "label": "DataProvider (Event Group 2)",
+        "key": "dataProvider2",
+        "required": true
+      },
+
+      {
+        "type": "text",
+        "key": "mappingTitle2",
+        "label": "Title Mapping (Event Group 2)"
+      },
+      {
+        "type": "text",
+        "key": "mappingDate2",
+        "label": "Date Mapping (Event Group 2)"
+      },
+      {
+        "type": "text",
+        "key": "mappingColor2",
+        "label": "Color Mapping (Event Group 2)"
+      },
+      {
+        "type": "select",
+        "key": "language",
+        "options": ["pt", "en", "fr", "es", "pt-br", "ru", "ja", "uk"] ,
+        "label": "language",
+        "defaultValue": "pt"
+      },
+      {
+        "type": "event",
+        "label": "On Change",
+        "key": "calendarEvent",
+        "context": [
+          {
+            "label": "Clicked Event",
+            "key": "value"
+          }
+        ]
       }
     ]
+    
   }
 }

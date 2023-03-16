@@ -109,6 +109,7 @@ export default {
       preferBuiltins: true,
       browser: true,
       skip: ["svelte", "svelte/internal"],
+      dedupe: ['@fullcalendar/common']
     }),
     svg(),
     json(),
