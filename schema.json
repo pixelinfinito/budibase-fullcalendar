@@ -6,6 +6,7 @@
     "friendlyName": "FullCalendar",
     "description": "simple calendar component for budibase",
     "icon": "Calendar",
+
     "settings": [
       {
         "type": "dataProvider",
@@ -13,7 +14,7 @@
         "key": "dataProvider",
         "required": true
       },
-      
+     
       {
         "type": "text",
         "key": "mappingTitle",
@@ -23,6 +24,11 @@
         "type": "text",
         "key": "mappingDate",
         "label": "Date Mapping (Event Group 1)"
+      },
+      {
+        "type": "boolean",
+        "key": "allday",
+        "label": "AllDay Mapping (Event Group 1)"
       },
       {
         "type": "color",
@@ -53,6 +59,11 @@
         "label": "Color Mapping",
         "key": "mappingColor2",
         "defaultValue": "#000"
+      },
+      {
+        "type": "boolean",
+        "key": "allday2",
+        "label": "AllDay Mapping (Event Group 2)"
       },
       {
         "type": "select",

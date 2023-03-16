@@ -22,6 +22,9 @@
 
   export let mappingColor
   export let mappingColor2
+
+  export let allday
+  export let allday2
   
   let eventsList = []
   onMount(()=>{
@@ -32,13 +35,13 @@
     if(dataProvider.rows){
       dataProvider.rows.forEach(event => {
         let eventColor = mappingColor ?? '#313131'           
-        eventsList.push({ title: event[mappingTitle], date: event[mappingDate], color: eventColor, event: event, allDay: true   })        
+        eventsList.push({ title: event[mappingTitle], date: event[mappingDate], color: eventColor, event: event, allDay: allday   })        
       });
     }
     if(dataProvider2.rows){
       dataProvider2.rows.forEach(event => {
         let eventColor2 = mappingColor2 ?? '#eb4034' 
-        eventsList.push({ title: event[mappingTitle2], date: event[mappingDate2], color: eventColor2, event: event  })
+        eventsList.push({ title: event[mappingTitle2], date: event[mappingDate2], color: eventColor2, event: event, allDay: allday2  })
       });
     }
     eventsList = eventsList
