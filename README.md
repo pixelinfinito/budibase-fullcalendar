@@ -8,7 +8,7 @@ It's a component to implement fullcalendar in your budibase.
 ## Installation
 To install the plugin for Budibase, follow these steps:
 
-1. Clone the plugin repository to your local machine ```https://github.com/pixelinfinito/budibase-fullcalendar.git```.
+1. Copy the repository link ```https://github.com/pixelinfinito/budibase-fullcalendar.git```.
 2. Open Budibase and navigate to the "Plugins" section.
 3. Click "Add New Plugin" and select the plugin file you just downloaded.
 The plugin will be installed automatically.
