@@ -12,8 +12,10 @@ To install the plugin for Budibase, follow these steps:
 2. Open Budibase and navigate to the "Plugins" section.
 3. Click add plugin.
 4. Select GitHub source.
-5. Paste the link
-The plugin will be installed automatically.
+5. Put the link in the URL section
+
+
+<p>The plugin will be installed automatically.</p>
 
 ## Use
 
