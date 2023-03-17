@@ -6,7 +6,6 @@
     "friendlyName": "FullCalendar",
     "description": "simple calendar component for budibase",
     "icon": "Calendar",
-
     "settings": [
       {
         "type": "dataProvider",

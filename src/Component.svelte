@@ -48,11 +48,10 @@
   })
 
   let options  = {
-    initialView: 'dayGridMonth',
     headerToolbar: {
       left: 'prev,next today',
       center: 'title',
-      right: 'dayGridMonth'
+      right: 'dayGridMonth,dayGridWeek,dayGridDay'
     },
     plugins: [daygridPlugin, listPlugin],
     initialDate:  Date.now(),
