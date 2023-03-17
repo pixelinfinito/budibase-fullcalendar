@@ -10,7 +10,9 @@ To install the plugin for Budibase, follow these steps:
 
 1. Copy the repository link ```https://github.com/pixelinfinito/budibase-fullcalendar.git```.
 2. Open Budibase and navigate to the "Plugins" section.
-3. Click "Add New Plugin" and select the plugin file you just downloaded.
+3. Click on add Plugin.
+4. Select GitHub source.
+5. Paste the link
 The plugin will be installed automatically.
 
 ## Use
