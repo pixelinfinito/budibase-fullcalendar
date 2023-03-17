@@ -77,4 +77,3 @@
 <div use:styleable={$component.styles}>
   <FullCalendar {options} />
 </div>
-
