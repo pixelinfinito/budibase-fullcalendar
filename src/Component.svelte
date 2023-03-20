@@ -7,7 +7,11 @@
   import listPlugin from '@fullcalendar/list';
   import { onMount } from "svelte";
   import {langs, codeLang} from "./lang"
- 
+
+
+  const { styleable  } = getContext("sdk") 
+  const component = getContext("component")
+
   export let language
   export let calendarEvent
   
@@ -57,23 +61,27 @@
     initialDate:  Date.now(),
     locale: language,
     dayMaxEvents: true,
-    eventClick: (event)=>{
-      calendarEvent({
-        value: event.event
+    eventClick: async (event)=>{
+      await calendarEvent({
+        data: JSON.parse(JSON.stringify(event.event)),
       })
-      console.log(JSON.parse(text))
-      console.log(event.event.title)
+      console.log(JSON.parse(JSON.stringify(event.event)))
     },
     events:eventsList,
     eventColor: '#378006',
     theme: true,
     ...langs[codeLang(language)]
   }
-  const { styleable } = getContext("sdk") 
-  const component = getContext("component")
+  
 
 </script>
 
 <div use:styleable={$component.styles}>
   <FullCalendar {options} />
 </div>
+
+<style>
+  a.fc-direction-ltr .fc-daygrid-event.fc-event-end, .fc-direction-rtl .fc-daygrid-event.fc-event-start{
+    font-size: 30px !important;
+  }
+</style>

@@ -78,7 +78,8 @@
         "context": [
           {
             "label": "Clicked Event",
-            "key": "value"
+            "key": "data",
+            "type": "object"
           }
         ]
       }
