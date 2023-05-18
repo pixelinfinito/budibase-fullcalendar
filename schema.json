@@ -25,6 +25,16 @@
         "label": "Date Mapping (Event Group 1)"
       },
       {
+        "type": "text",
+        "key": "mappingStart",
+        "label": "Start Mapping (Event Group 1)"
+      },
+      {
+        "type": "text",
+        "key": "mappingEnd",
+        "label": "End Mapping (Event Group 1)"
+      },
+      {
         "type": "boolean",
         "key": "allday",
         "label": "AllDay Mapping (Event Group 1)"
@@ -52,6 +62,16 @@
         "type": "text",
         "key": "mappingDate2",
         "label": "Date Mapping (Event Group 2)"
+      },
+      {
+        "type": "text",
+        "key": "mappingStart2",
+        "label": "Start Mapping (Event Group 2)"
+      },
+      {
+        "type": "text",
+        "key": "mappingEnd2",
+        "label": "End Mapping (Event Group 2)"
       },
       {
         "type": "color",
