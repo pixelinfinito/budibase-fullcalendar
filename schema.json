@@ -8,81 +8,144 @@
     "icon": "Calendar",
     "settings": [
       {
-        "type": "dataProvider",
-        "label": "DataProvider (Event Group 1)",
-        "key": "dataProvider",
-        "required": true
-      },
-     
-      {
-        "type": "text",
-        "key": "mappingTitle",
-        "label": "Title Mapping (Event Group 1)"
-      },
-      {
-        "type": "text",
-        "key": "mappingDate",
-        "label": "Date Mapping (Event Group 1)"
-      },
-      {
-        "type": "boolean",
-        "key": "allday",
-        "label": "AllDay Mapping (Event Group 1)"
-      },
-      {
-        "type": "color",
-        "label": "Color Mapping",
-        "key": "mappingColor",
-        "defaultValue": "#272727"
-      },
-      {
-        "type": "dataProvider",
-        "label": "DataProvider (Event Group 2)",
-        "key": "dataProvider2",
-        "required": false
-      },
-
-      {
-        "type": "text",
-        "key": "mappingTitle2",
-        "label": "Title Mapping (Event Group 2)"
-      },
-      
-      {
-        "type": "text",
-        "key": "mappingDate2",
-        "label": "Date Mapping (Event Group 2)"
-      },
-      {
-        "type": "color",
-        "label": "Color Mapping",
-        "key": "mappingColor2",
-        "defaultValue": "#000"
-      },
-      {
-        "type": "boolean",
-        "key": "allday2",
-        "label": "AllDay Mapping (Event Group 2)"
-      },
-      {
-        "type": "select",
-        "key": "language",
-        "options": ["pt", "en", "fr", "es", "ru"] ,
-        "label": "language",
-        "defaultValue": "pt"
-      },
-      {
-        "type": "event",
-        "label": "On Click",
-        "key": "calendarEvent",
-        "context": [
+        "section": true,
+        "name": "Event Group 1",
+        "settings": [
           {
-            "label": "Clicked Event",
-            "key": "value"
+            "type": "dataProvider",
+            "label": "DataProvider",
+            "key": "dataProvider",
+            "required": true
+          },
+          {
+            "type": "text",
+            "key": "mappingTitle",
+            "label": "Title Mapping"
+          },
+          {
+            "type": "text",
+            "key": "mappingDate",
+            "label": "Date Mapping"
+          },
+          {
+            "type": "text",
+            "key": "mappingStart",
+            "label": "Start Mapping"
+          },
+          {
+            "type": "text",
+            "key": "mappingEnd",
+            "label": "End Mapping"
+          },
+          {
+            "type": "boolean",
+            "key": "allday",
+            "label": "AllDay Mapping"
+          },
+          {
+            "type": "color",
+            "label": "Color Mapping",
+            "key": "mappingColor",
+            "defaultValue": "#272727"
+          }
+        ]
+      },
+      {
+        "section": true,
+        "name": "Event Group 2",
+        "settings": [
+          {
+            "type": "dataProvider",
+            "label": "DataProvider",
+            "key": "dataProvider2",
+            "required": false
+          },
+          {
+            "type": "text",
+            "key": "mappingTitle2",
+            "label": "Title Mapping"
+          },
+          {
+            "type": "text",
+            "key": "mappingDate2",
+            "label": "Date Mapping"
+          },
+          {
+            "type": "text",
+            "key": "mappingStart2",
+            "label": "Start Mapping"
+          },
+          {
+            "type": "text",
+            "key": "mappingEnd2",
+            "label": "End Mapping"
+          },
+          {
+            "type": "boolean",
+            "key": "allday2",
+            "label": "AllDay Mapping"
+          },
+          {
+            "type": "color",
+            "label": "Color Mapping",
+            "key": "mappingColor2",
+            "defaultValue": "#000"
+          }
+        ]
+      },
+      {
+        "section": true,
+        "name": "Header options",
+        "settings": [
+          {
+            "type": "text",
+            "label": "Start Options",
+            "key": "headerOptionsStart",
+            "defaultValue": "prev,next today"
+          },
+          {
+            "type": "text",
+            "label": "Center Options",
+            "key": "headerOptionsCenter",
+            "defaultValue": "title"
+          },
+          {
+            "type": "text",
+            "label": "End Options",
+            "key": "headerOptionsEnd",
+            "defaultValue": "dayGridMonth,dayGridWeek,timeGridDay"
+          }
+        ]
+      },
+      {
+        "section": true,
+        "settings": [
+          {
+            "type": "select",
+            "key": "language",
+            "options": [
+              "pt",
+              "en",
+              "fr",
+              "es",
+              "ru"
+            ],
+            "label": "language",
+            "defaultValue": "pt"
+          },
+          {
+            "type": "event",
+            "label": "On Click",
+            "key": "calendarEvent",
+            "context": [
+              {
+                "label": "Clicked Event",
+                "key": "value"
+              }
+            ]
           }
         ]
       }
     ]
-    
   }
 }
