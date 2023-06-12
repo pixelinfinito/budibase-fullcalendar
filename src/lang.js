@@ -119,7 +119,7 @@ export function codeLang(lang){
         case "ru":
             code = 2
         break;
-        case "fa":
+        case "fr":
             code = 3
         break;
     } 
