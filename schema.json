@@ -13,7 +13,6 @@
         "key": "dataProvider",
         "required": true
       },
-     
       {
         "type": "text",
         "key": "mappingTitle",
@@ -46,13 +45,11 @@
         "key": "dataProvider2",
         "required": false
       },
-
       {
         "type": "text",
         "key": "mappingTitle2",
         "label": "Title Mapping (Event Group 2)"
       },
-      
       {
         "type": "text",
         "key": "mappingDate2",
