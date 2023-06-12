@@ -124,6 +124,5 @@ export function codeLang(lang){
         break;
     } 
     
-    console.log(code, 'code', lang)
     return code
 }

@@ -63,7 +63,6 @@
       calendarEvent({
         value: event.event.id
       })
-      console.log(event.event.title)
     },
     events:eventsList,
     eventColor: '#378006',
