@@ -61,9 +61,8 @@
     dayMaxEvents: true,
     eventClick: (event)=>{
       calendarEvent({
-        value: event.event
+        value: event.event.id
       })
-      console.log(JSON.parse(text))
       console.log(event.event.title)
     },
     events:eventsList,
