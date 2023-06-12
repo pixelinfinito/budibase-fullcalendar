@@ -25,6 +25,11 @@
         "label": "Date Mapping (Event Group 1)"
       },
       {
+        "type": "text",
+        "key": "mappingId",
+        "label": "Id Mapping (Event Group 1)"
+      },
+      {
         "type": "boolean",
         "key": "allday",
         "label": "AllDay Mapping (Event Group 1)"
@@ -52,6 +57,11 @@
         "type": "text",
         "key": "mappingDate2",
         "label": "Date Mapping (Event Group 2)"
+      },
+      {
+        "type": "text",
+        "key": "mappingId2",
+        "label": "Id Mapping (Event Group 2)"
       },
       {
         "type": "color",
