@@ -79,6 +79,13 @@
         "defaultValue": "pt"
       },
       {
+        "type": "select",
+        "key": "initialView",
+        "options": ["dayGridMonth", "dayGridWeek", "timeGridDay", "listWeek"] ,
+        "label": "Initial view",
+        "defaultValue": "dayGridMonth"
+      },
+      {
         "type": "event",
         "label": "On Click",
         "key": "calendarEvent",

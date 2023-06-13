@@ -8,6 +8,7 @@
   import { langs, codeLang } from "./lang";
 
   export let language;
+  export let initialView;
   export let calendarEvent;
 
   export let mappingTitle;
@@ -68,6 +69,7 @@
       right: "dayGridMonth,dayGridWeek,dayGridDay",
     },
     plugins: [daygridPlugin, listPlugin],
+    initialView: initialView,
     initialDate: Date.now(),
     locale: language,
     dayMaxEvents: true,
