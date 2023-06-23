@@ -1,5 +1,5 @@
 # BudiBase FullCalendar
-<img src="https://github.com/pixelinfinito/budibase-fullcalendar/blob/main/src/images/calendar.png" />
+<img src="src/images/calendar.png" />
 
 
 ## Description
@@ -23,9 +23,9 @@ After installing the plugin for Budibase, you can start using it in your applica
 The plugin adds full calendar and functionality to the platform, allowing you to further customize your application.
 You can use up to two data sources, the first source is mandatory. You can differentiate the two data sources in the calendar by changing the colors.
 
-1. First add a data source <p><img src="https://github.com/pixelinfinito/budibase-fullcalendar/blob/main/src/images/usage/2.png" /></p>
-2. Add the calendar component inside the data source, you can search for FullCalendar <p><img src="https://github.com/pixelinfinito/budibase-fullcalendar/blob/main/src/images/usage/3.png" /></p>
-3.  Configure the data that will be used, the fields <b>Title Mapping (Event Group 1) </b> and <b>Date Mapping (Event Group 1)</b> are mandatory <p><img src="https://github.com/pixelinfinito/budibase-fullcalendar/blob/main/src/images/usage/4.png" /></p>
+1. First add a data source <p><img src="src/images/usage/2.png" /></p>
+2. Add the calendar component inside the data source, you can search for FullCalendar <p><img src="src/images/usage/3.png" /></p>
+3.  Configure the data that will be used, the fields <b>Title Mapping (Event Group 1) </b> and <b>Date Mapping (Event Group 1)</b> are mandatory <p><img src="src/images/usage/4.png" /></p>
 
 ## Features
 
@@ -33,6 +33,12 @@ You can use up to two data sources, the first source is mandatory. You can diffe
 2. Map data that appears in the calendar
 3. Group data by color
 4. Change language
+
+## Available plugins
+1. DayGrid ([Month View](https://fullcalendar.io/docs/month-view), [DayGrid View](https://fullcalendar.io/docs/daygrid-view))
+2. List ([List View](https://fullcalendar.io/docs/list-view))
+3. TimeGrid ([TimeGrid View](https://fullcalendar.io/docs/timegrid-view))
+
 
 ## Contributing
 

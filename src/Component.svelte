@@ -4,6 +4,7 @@
   import '@fullcalendar/core/locales-all'
   import FullCalendar from 'svelte-fullcalendar';
   import daygridPlugin from '@fullcalendar/daygrid';
+  import timeGridPlugin from '@fullcalendar/timegrid';
   import listPlugin from '@fullcalendar/list';
   import { onMount } from "svelte";
   import {langs, codeLang} from "./lang"
@@ -13,9 +14,13 @@
   
   export let mappingTitle
   export let mappingDate
+  export let mappingStart
+  export let mappingEnd
  
   export let mappingTitle2
   export let mappingDate2
+  export let mappingStart2
+  export let mappingEnd2
 
   export let dataProvider
   export let dataProvider2
@@ -26,6 +31,10 @@
   export let allday
   export let allday2
   
+  export let headerOptionsStart
+  export let headerOptionsCenter
+  export let headerOptionsEnd
+
   let eventsList = []
   onMount(()=>{
     
@@ -35,13 +44,13 @@
     if(dataProvider.rows){
       dataProvider.rows.forEach(event => {
         let eventColor = mappingColor ?? '#313131'           
-        eventsList.push({ title: event[mappingTitle], date: event[mappingDate], color: eventColor, event: event, allDay: allday   })        
+        eventsList.push({ title: event[mappingTitle], date: event[mappingDate], start: event[mappingStart], end: event[mappingEnd], color: eventColor, event: event, allDay: allday   })        
       });
     }
     if(dataProvider2.rows){
       dataProvider2.rows.forEach(event => {
         let eventColor2 = mappingColor2 ?? '#eb4034' 
-        eventsList.push({ title: event[mappingTitle2], date: event[mappingDate2], color: eventColor2, event: event, allDay: allday2  })
+        eventsList.push({ title: event[mappingTitle2], date: event[mappingDate2], start: event[mappingStart2], end: event[mappingEnd2], color: eventColor2, event: event, allDay: allday2  })
       });
     }
     eventsList = eventsList
@@ -49,11 +58,11 @@
 
   let options  = {
     headerToolbar: {
-      left: 'prev,next today',
-      center: 'title',
-      right: 'dayGridMonth,dayGridWeek,dayGridDay'
+      start: headerOptionsStart,
+      center: headerOptionsCenter,
+      end: headerOptionsEnd
     },
-    plugins: [daygridPlugin, listPlugin],
+    plugins: [daygridPlugin, listPlugin, timeGridPlugin],
     initialDate:  Date.now(),
     locale: language,
     dayMaxEvents: true,
