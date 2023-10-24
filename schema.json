@@ -122,6 +122,18 @@
         "settings": [
           {
             "type": "select",
+            "key": "defaultView",
+            "options": [
+              "dayGridMonth",
+              "dayGridWeek",
+              "listWeek",
+              "timeGridWeek"
+            ],
+            "label": "Default View",
+            "defaultValue": "dayGridMonth"
+          },
+          {
+            "type": "select",
             "key": "language",
             "options": [
               "pt",
